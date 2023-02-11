@@ -1429,7 +1429,11 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   
     .about .abs-img-2 { width: max-content; }
   
-  
+    /* contactact us */
+
+    .blog-card {
+      max-width: 840px;
+    }
   
     /**
      * NEWSLETTER
