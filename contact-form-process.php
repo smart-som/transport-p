@@ -20,6 +20,8 @@ if (isset($_POST['Email'])) {
     if (
         !isset($_POST['Name']) ||
         !isset($_POST['Email']) ||
+        !isset($_POST['Address']) ||
+        !isset($_POST['Tel']) ||
         !isset($_POST['Message'])
     ) {
         problem('We are sorry, but there appears to be a problem with the form you submitted.');
@@ -27,6 +29,8 @@ if (isset($_POST['Email'])) {
 
     $name = $_POST['Name']; // required
     $email = $_POST['Email']; // required
+    $address = $_POST['Address']; // required
+    $tel = $_POST['Tel']; // required
     $message = $_POST['Message']; // required
 
     $error_message = "";
@@ -60,6 +64,8 @@ if (isset($_POST['Email'])) {
 
     $email_message .= "Name: " . clean_string($name) . "\n";
     $email_message .= "Email: " . clean_string($email) . "\n";
+    $email_message .= "Tel: " . clean_string($tel) . "\n";
+    $email_message .= "Address: " . clean_string($address) . "\n";
     $email_message .= "Message: " . clean_string($message) . "\n";
 
     // create email headers
