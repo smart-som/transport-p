@@ -1434,6 +1434,8 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     .blog-card {
       max-width: 840px;
     }
+
+    .blog-list { grid-template-columns: 1fr 1fr; }
   
     /**
      * NEWSLETTER
